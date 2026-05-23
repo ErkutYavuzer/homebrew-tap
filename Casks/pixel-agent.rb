@@ -20,12 +20,14 @@ cask "pixel-agent" do
 
   caveats <<~EOS
     pixel-agent is currently ad-hoc signed (not Apple Developer ID signed).
-    macOS Gatekeeper will block first launch unless you install with
-    --no-quarantine:
+    macOS Gatekeeper will block first launch unless you bypass quarantine.
 
-      brew install --cask --no-quarantine ErkutYavuzer/tap/pixel-agent
+    Recommended (one-shot, via environment variable):
 
-    If you already installed without it, run:
+      HOMEBREW_CASK_OPTS="--no-quarantine" brew install --cask \\
+        ErkutYavuzer/tap/pixel-agent
+
+    If you already installed and Gatekeeper blocks the app, run:
 
       xattr -d com.apple.quarantine /Applications/PixelAgent.app
 
