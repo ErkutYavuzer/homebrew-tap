@@ -4,10 +4,10 @@ cask "pixel-agent" do
 
   url "https://github.com/ErkutYavuzer/pixel-agent/releases/download/v#{version}/PixelAgent-#{version}-arm64.zip"
   name "pixel-agent"
-  desc "Personal AI agent for macOS — multi-LLM CLI orchestration with iPhone remote"
+  desc "Personal AI agent — multi-LLM CLI orchestration with iPhone remote"
   homepage "https://github.com/ErkutYavuzer/pixel-agent"
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
   depends_on arch: :arm64
 
   app "PixelAgent.app"
