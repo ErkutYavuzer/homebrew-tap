@@ -1,6 +1,6 @@
 cask "pixel-agent" do
-  version "0.2.66"
-  sha256 "b5b591c4602cb295a607c6bd2c980b6ef2ca14ea7ea1bc4d1f432c627cec5395"
+  version "0.2.67"
+  sha256 "3c83f87a66003f8a5717f4d3c7672e9fe26aa28e7c4873a58e0ae64006cbff3a"
 
   url "https://github.com/ErkutYavuzer/pixel-agent/releases/download/v#{version}/PixelAgent-#{version}-arm64.zip"
   name "pixel-agent"
